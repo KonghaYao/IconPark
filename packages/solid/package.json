@@ -8,6 +8,7 @@
     "scripts": {
         "build": "vite build && node ./src/typeGenerator.mjs"
     },
+    "files":["es","src"],
     "keywords": [
         "solid",
         "icon",

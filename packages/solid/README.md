@@ -1,6 +1,8 @@
 # IconPark Icons
 
 > Solid-js version fork from React Icons for IconPark
+>
+> I'm KonghaYao, make IconPark be running with Solid-js😍
 
 ## Introduction
 
