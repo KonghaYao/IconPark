@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "rootDir": ".",
+        "declaration": true,
+        "declarationDir": "./es",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "preserveSymlinks": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "emitDeclarationOnly": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        "baseUrl": "./",
+        "paths": {
+            "../runtime": ["./src/runtime"],
+            "react": ["solid-js"]
+        }
+    },
+    "include": ["src/**/*", "styles/**/*"]
+}
