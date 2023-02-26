@@ -1,14 +1,17 @@
 {
     "name": "icon-park-solid",
     "description": "Solid Icons for IconPark",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "main": "es/index.mjs",
     "module": "es/index.mjs",
     "typings": "es/index.d.ts",
     "scripts": {
         "build": "vite build && node ./src/typeGenerator.mjs"
     },
-    "files":["es","src"],
+    "files": [
+        "es",
+        "src"
+    ],
     "keywords": [
         "solid",
         "icon",
