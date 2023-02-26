@@ -24,6 +24,17 @@ const bundle = [
                 return "../solid/src/runtime/index.tsx";
             }
         },
+        transform(code: string, id: string) {
+            if (id.includes("src/icons")) {
+                const newCode = code
+                    .replace(/strokeWidth=/g, "stroke-width=")
+                    .replace(/strokeLinejoin=/g, "stroke-linejoin=")
+                    .replace(/strokeLinecap=/g, "stroke-linecap=");
+                // console.log(newCode);
+                // throw new Error("");
+                return newCode;
+            }
+        },
     },
 ];
 const output = {
@@ -46,8 +57,8 @@ const output = {
 };
 export default ({ mode }) => ({
     plugins: [
-        solidPlugin(),
         mode === "production" && bundle,
+        solidPlugin(),
         mode === "test" &&
             imp({
                 libList: [

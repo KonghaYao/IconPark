@@ -22,5 +22,5 @@
             "react": ["solid-js"]
         }
     },
-    "include": ["src/**/*", "styles/**/*"]
+    "include": ["src/**/*"]
 }
